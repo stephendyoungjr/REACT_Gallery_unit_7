@@ -45,9 +45,9 @@ function App() {
         {/* Home redirects to the first static route */}
         <Route path="/" element={<Navigate to="/cats" replace />} />
         {/* Three static topic routes, all reusing PhotoList */}
-        <Route path="/cats" element={<PhotoList photos={cats} title="Cats" />} />
-        <Route path="/dogs" element={<PhotoList photos={dogs} title="Dogs" />} />
-        <Route path="/birds" element={<PhotoList photos={birds} title="Birds" />} />
+        <Route path="/cats" element={<PhotoList photos={cats} title="Cat Gifs" />} />
+        <Route path="/dogs" element={<PhotoList photos={dogs} title="Dog Gifs" />} />
+        <Route path="/birds" element={<PhotoList photos={birds} title="Bird Gifs" />} />
         {/* Route for user search queries */}
         <Route path="/search/:query" element={<PhotoList photos={searchPhotos} title={searchTitle} />} />
       </Routes>
